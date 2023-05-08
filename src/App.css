@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+/* App.css */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f1f1f1;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.timer-form input {
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.timer-list {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 50%;
+  margin-right: 2rem;
+
+}
+
+.timer-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: #f1f1f1;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.timer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin-left: 2rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.timer-form-label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.timer-form-input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.App-link {
-  color: #61dafb;
+.timers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.timer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+
+.timer-expired {
+  font-weight: bold;
+  color: #f00;
+  margin-bottom: 0.5rem;
+}
+
+.timer-remove {
+  padding: 0.5rem;
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
 }
